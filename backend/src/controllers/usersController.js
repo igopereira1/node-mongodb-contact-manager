@@ -52,7 +52,7 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 const profileUser = asyncHandler(async (req, res) => {
-    res.json({ message: 'User profile' });
+    res.json(req.user);
 });
 
 module.exports = {
